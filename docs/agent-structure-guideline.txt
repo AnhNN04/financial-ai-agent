@@ -1,0 +1,74 @@
+project structure:
+.github/
+src/
+    agent_name/
+        api/
+	    __init__.py
+	    dependencies/
+	    helpers/
+	    models/
+	    routers/
+        application/
+	    __init__.py
+
+        domain/
+	    agents/
+	    coordinators/
+	    tools/
+		base.py
+		__init__.py
+		retriever.py
+		tabvily.py
+		...
+        infra/
+	    chats/
+		processors/
+		    __init__.py
+		    gemini.py
+		    openai.py
+		    vertexai.py
+		    ...
+		__init__.py
+		base.py
+		...
+	    embeddings/
+		processor/
+		    gemini.py
+		    openai.py
+		    vertexai.py
+		    ....
+		__init__.py
+		base.py
+		...
+	    vector_stores/
+	    __init__.py
+	shared/
+	    base/
+	    exceptions/
+	    logging/
+	    settings/
+		models/
+		__init__.py
+		settings.py
+		
+	    __init__.py
+	    utils.py
+	tests/
+	    __init__.py
+	    test_embeddings.py
+	    test_qdrant.py
+	    ...
+	.python-version
+	Dockerfile
+	README.md
+	main.py
+	pyproject.toml
+	settings.yaml
+	uv.lock
+	...
+
+
+	
+    
+		
+		

@@ -1,0 +1,50 @@
+# settings.yaml
+app:
+  name: Stock Assistant
+  version: 0.1.0
+  debug: false
+  log_level: INFO
+  environment: development
+
+llm:
+  default_provider: openai
+  temperature: 0.1
+  max_tokens: 2000
+  timeout: 60
+  max_retries: 3
+  openai_model: gpt-3.5-turbo
+  openai_temperature: 0.1
+  openai_max_tokens: 2000
+  openai_top_p: 1.0
+  openai_frequency_penalty: 0.0
+  openai_presence_penalty: 0.0
+  openai_timeout: 60
+  openai_max_retries: 3
+  gemini_model: gemini-2.0-flash
+  gemini_temperature: 0.1
+  gemini_max_tokens: 2000
+  gemini_top_p: 1.0
+  gemini_top_k: 40
+  gemini_timeout: 60
+  gemini_max_retries: 3
+  verbose: false
+  streaming: false
+  enable_callbacks: true
+  enable_content_filter: true
+
+qdrant:
+  collection_name: milano-agent-qdrant
+  vector_size: 1024
+  distance: Cosine
+
+s3:
+  s3_documents_prefix: rag-docs/
+
+embeddings:
+  model: models/embedding-001
+  chunk_size: 1000
+  chunk_overlap: 200
+  cohere_model_id: cohere.embed-multilingual-v3
+  cohere_input_type: search_document
+  cohere_embedding_type: float
+  cohere_max_batch_size: 96
